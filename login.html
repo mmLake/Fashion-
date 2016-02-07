@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+<title>Login Page</title>
+    </head>
+    <body>
+        <p>link to myhomepage, key to database pull up from userTable</p>
+        
+    <h1>Login Page</h1>
+        <form action="name.asp" method="get">
+        <p>Username</Enter><input type = "username" name = "user"/>
+           Password<input type = "password" name = "pass"
+                           </p>
+                           </body>
+        </form>
+<button onclick="check()">Submit</button>
+
+
+<h2>JSON Object Creation in JavaScript</h2>
+
+<p id="users"></p>
+
+            <script language = "javascript" >
+            function check(form)
+                if (form.userid.value) == "myUserID" && form.password.value == "myPassword") {
+                    window.open('MyHomePage.html')
+                }
+                else {
+                    alert("Wrong Username or Password")
+                }
+
+                var users = [ '{"id":"1","email":"atorjkov@gmail.com","password":"fashion" }'];
+                
+
+//converts JSON text into JavaScript object
+               var obj = JSON.parse(users); 
+
+                    //returns atorjkov@gmail.com fashion
+document.getElementById("users").innerHTML =
+
+                users[1].email + " " users[1].password;
+
+                
+            </script>
+    </body>
+
+</html> 
